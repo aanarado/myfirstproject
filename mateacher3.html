@@ -1,0 +1,59 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>mateacher3</title>
+        <link rel="stylesheet" href="mateacher.css">
+    </head>
+    <body>
+        
+    </body>
+    </html>
+    <section id="promo" class="promo" aria-label="Promoção do dia">
+      <h3>Mega promoção todos os dias</h3>
+      <p style="margin-top:.5rem;opacity:.95">Peça pelo aplicativo e ganhe desconto especial — consulte nosso cardápio para ofertas atualizadas.</p>
+    </section>
+
+    <section class="menu-header" aria-labelledby="menu-title">
+      <div class="menu-title" id="menu-title">
+        <img src="img/logo branca.jpg" alt="Logo" class="logo-small">
+        <h2>Nossas variedades</h2>
+      </div>
+    </section>
+
+    <section id="lancamentos" style="padding:1rem;max-width:1200px;margin:0 auto;">
+      <p>Em breve: novas combinações e porções especiais. Acompanhe nossas redes sociais.</p>
+    </section>
+
+    <section id="contato" style="padding:2rem 1rem;max-width:900px;margin:0 auto;">
+      <h3>Contato</h3>
+      <p>Telefone/WhatsApp: <strong>(00) 00000-0000</strong></p>
+      <form onsubmit="event.preventDefault(); alert('Formulário enviado — vamos responder em breve!')" style="margin-top:1rem;display:grid;gap:.5rem;">
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" required placeholder="Seu nome" style="padding:.6rem;border-radius:8px;border:1px solid #ccc">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua dúvida ou pedido" style="padding:.6rem;border-radius:8px;border:1px solid #ccc"></textarea>
+
+        <button class="btn" type="submit" style="width:fit-content">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="ano"></span> Mateacher — Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    // coloca ano atual no rodapé
+    document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // acessibilidade: permite foco por teclado visível
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Tab') document.documentElement.style.scrollBehavior = 'smooth';
+    });
+  </script>
+</body>
+</html>

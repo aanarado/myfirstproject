@@ -1,0 +1,435 @@
+
+*{
+    margin: 0; 
+}
+
+#primeiro img{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+}
+
+#como {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+
+
+/*SEGUMDA LINHA */
+
+#subcabecalho{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+
+}
+ 
+#botoes{
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.vermelho_claro{
+    width: 20%;
+    height: 10vh;
+    background-image: linear-gradient(to right, rgb(233, 31, 31), rgb(255, 250, 250));
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Impact;
+    text-align: center;
+    justify-content: center;
+    border-radius: 13px;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.vermelho_escuro{
+    width: 20%;
+    height: 10vh;
+    background-image: linear-gradient(to right, rgb(233, 31, 31), rgb(255, 250, 250));
+    color: aliceblue;
+    font-size: 30px;
+    font-family: Impact;
+    text-align: center;
+    border-radius: 13px;
+    position: absolute;
+    flex-direction: column;
+    top: 10px;
+    left: 450px;
+    gap: 10px;
+}
+
+/* TERCEIRA LINHA*/
+
+#big{
+    width: 300%;
+    height: 100vh;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+     position: relative;
+}
+
+#big img{
+width: 300%;
+height: 100vh;
+position: absolute;
+  top: 420%;
+  left: 500%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 70vh;
+  
+}
+
+/*  QUARTA LINHA */
+
+#promo{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(121, 57, 57);
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 130%;
+    left: 0%;
+}
+
+#promo p{
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    letter-spacing: 10px;
+}
+
+/*  outro html */
+
+#tela {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(to bottom, #d6d0d0, #ff1493 ) ;
+    
+}
+
+#logo {
+    width: 36%;
+    height: 20vh;
+}
+
+#titulo {
+    font-size: 10vh;
+    width: 100%;
+    height: 15vh;
+    border-radius: 30px;
+    position: absolute;
+    top: 1%;
+    left: 0%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#big {
+    width: 10%;
+    height: 14vh;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#tasty {
+    width: 10%;
+    height: 14vh;
+    justify-content: space-evenly;
+     top: 40%;
+     position: absolute;
+    top: 40%;
+    left: 19%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#mcmelt {
+     width: 10%;
+    height: 14vh;
+     top: 40%;
+     position: absolute;
+    top: 40%;
+    left: 34%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#duplocheddar {
+     width: 10%;
+    height: 14vh;
+     top: 40%;
+     position: absolute;
+    left: 49%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#duploeggcheesebacon {
+     width: 10%;
+    height: 14vh;
+     top: 40%;
+     position: absolute;
+    top: 40%;
+    left: 64%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#quarteirao {
+     width: 10%;
+    height: 14vh;
+     top: 40%;
+     position: absolute;
+    top: 40%;
+    left: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ 
+#bigmc {
+    font-size: 4vh;
+    width: 40%;
+    height: 7vh;
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    align-items: baseline;
+    display: flex;
+    justify-content: baseline;
+}
+/* Reset simples */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+:root {
+  --pink: #ff1493;
+  --burgundy: #793939;
+  --accent: #e91f1f;
+  --light: #fffafa;
+  --glass: rgba(255,255,255,0.85);
+}
+
+/* --- Header / Hero --- */
+header {
+  min-height: 60vh;
+  background: linear-gradient(180deg, #000 0%, rgba(0,0,0,0.35) 40%),
+              url('img/WhatsApp_Image_2022-07-13_at_10.28.53.jpeg') center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(0,0,0,0.35);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  color: var(--light);
+}
+.brand img {
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.brand h1 {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 600;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  color: var(--light);
+  text-align: center;
+}
+.hero-content h2 {
+  font-size: clamp(1.6rem,4vw,2.8rem);
+  margin-bottom: .5rem;
+}
+.hero-content p {
+  font-size: clamp(1rem,2.2vw,1.4rem);
+  opacity: .95;
+}
+
+.cta-row {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.btn {
+  background: linear-gradient(90deg,var(--accent),#fff);
+  color: var(--light);
+  padding: .85rem 1.25rem;
+  border-radius: 12px;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,.3);
+}
+.btn.ghost {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,.18);
+}
+
+/* --- Buttons area --- */
+.button-area {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+}
+.card-btn {
+  min-width: 180px;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg,#e91f1f,#fff);
+  color: #fff;
+  font-family: Impact,Arial Black, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0,0,0,.15);
+}
+
+/* --- Produtos (terceira linha) --- */
+.products {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+.product {
+  background: var(--glass);
+  backdrop-filter: blur(6px);
+  padding: 1rem;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .75rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.product img {
+  width: 100%;
+  max-width: 220px;
+  height: 160px;
+  object-fit: contain;
+}
+.product h3 {
+  font-size: 1.05rem;
+}
+.product p {
+  font-size: .9rem;
+  opacity: .85;
+}
+.price {
+  font-weight: 800;
+  margin-top: .25rem;
+}
+
+/* --- Promo strip --- */
+.promo {
+  margin: 2rem 1rem;
+  padding: 1.25rem;
+  border-radius: 20px;
+  background: var(--burgundy);
+  color: var(--light);
+  text-align: center;
+}
+.promo h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: clamp(1.6rem,3.5vw,3rem);
+  letter-spacing: 6px;
+}
+
+/* --- Menu header (tela secundária) --- */
+.menu-header {
+  background: linear-gradient(to bottom,#d6d0d0,var(--pink));
+  padding: 2rem 1rem;
+}
+.menu-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.menu-title img.logo-small {
+  height: 64px;
+  border-radius: 8px;
+}
+.menu-title h2 {
+  font-size: 2.5rem;
+}
+
+/* --- Footer --- */
+footer {
+  padding: 1.5rem;
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+/* --- Responsividade --- */
+@media (max-width:720px){
+  .topbar { padding: .75rem 1rem; }
+  .hero-content { padding: 2rem .5rem; }
+  .product img { height: 120px; }
+  .menu-title h2 { font-size: 1.6rem; }
+}
